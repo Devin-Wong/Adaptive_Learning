@@ -49,7 +49,7 @@ tf.random.set_seed(1014)
 n_features = 1
 
 model1 = func_model(n_features)
-history1 = model1.fit(XX_train, yy_train, epochs=3, shuffle=False,
+history1 = model1.fit(XX_train, yy_train, epochs=1000, shuffle=False,
                       verbose=1, batch_size=10, callbacks=[rLRp, early_stopping_cb],
                       validation_data=(XX_test, yy_test))
 
